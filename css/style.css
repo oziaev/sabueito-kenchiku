@@ -600,7 +600,7 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(/img/fv.jpg);
+  background-image: url(../img/fv.jpg);
   background-position: center;
   background-size: cover;
   padding-left: 100px;
@@ -818,7 +818,7 @@ span {
 #top #recruit {
   position: relative;
   background-attachment: fixed;
-  background-image: url(/img/recruit_background.jpg);
+  background-image: url(../img/recruit_background.jpg);
   background-position: center;
   background-size: cover;
   padding-block: 96px;
