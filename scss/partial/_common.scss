@@ -1,0 +1,176 @@
+@use "_mixin" as m;
+
+// ==========================================================================
+// 1. カラーパレット
+// ==========================================================================
+$color-white: #fff;
+$color-blue_1: #0164a4;
+$color-blue_2: #1794d3;
+$color-blue_3: #f1f8ff;
+$color-blue_4: #E2F5FF;
+$color-blue_5: #B0CAE0;
+$color-black: #121212;
+$color-gray: #7c7c7c;
+$color-green_1: #198900;
+$color-green_2: #D9FFD1;
+$color-border_gray: #e3e3e3;
+
+// ==========================================================================
+// 2. タイポグラフィ設定
+// ==========================================================================
+
+// フォント
+$ff-mincho: "Zen Old Mincho", serif;
+$ff-gothic: "Zen Kaku Gothic New", sans-serif;
+$ff-num: "Arizonia", cursive;
+
+// 文字サイズ基準 (Base 1rem = 10px / html { font-size: 62.5% })
+$fs-xl: 4rem;
+$fs-lg: 2rem;
+$fs-text: 1.6rem;
+$fs-sm: 1.4rem;
+
+// 文字の太さ
+$fw-bold: 700;
+$fw-base: 400;
+
+// 行間・文字間のスペース
+$lh-heading: 1.3;
+$lh-body: 1.7;
+$ls-base: 0.03em;
+
+//
+$transition: 0.3s ease;
+
+//
+$section-space-pc: 96px;
+$section-space-sp: 48px;
+
+$border-radius: 10px;
+
+//reasonの数字フォント font-family: "Arizonia", cursive;
+// ==========================================================================
+// 3. Placeholders (行間・文字間)
+// ==========================================================================
+%heading-style {
+  line-height: $lh-heading; // 行間
+  letter-spacing: $ls-base; // 文字間
+  font-weight: $fw-bold; // 太さ
+}
+
+// ==========================================================================
+// 4. Global Base (要素の初期設定)
+// ==========================================================================
+html {
+  font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $color-black;
+  font-size: $fs-text;
+  font-family: $ff-gothic;
+  font-weight: $fw-base;
+  line-height: $lh-body;
+  letter-spacing: $ls-base;
+  background-color: $color-white;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  transition: $transition;
+
+  &:hover {
+    transform: $transition;
+    opacity: 0.8;
+  }
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+  object-fit: cover;
+}
+
+span {
+  display: inline-block;
+}
+
+//共通
+.wrapper {
+  max-width: 1024px;
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+
+.container {
+  max-width: 768px;
+  padding-inline: 8px;
+  margin-inline: auto;
+}
+
+.section-header {
+  font-family: $ff-mincho;
+  text-align: center;
+  margin-bottom: $section-space-pc;
+
+  @include m.sp {
+    margin-bottom: $section-space-sp;
+  }
+
+  &__title__en {
+    font-size: 3.2rem;
+    color: $color-blue_2;
+
+    @include m.tb {
+      font-size: $fs-lg;
+    }
+  }
+  
+  &__title__ja {
+    @extend %heading-style;
+    font-size: $fs-xl;
+
+    @include m.tb {
+      font-size: 2.8rem;
+    }
+    
+    // @include m.tb {
+      //     font-size: 3.5rem;
+      // }
+      
+      // @include m.sp {
+        //     font-size: 3rem;
+        // }
+      }
+      
+      &__text {
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        font-size: $fs-lg;
+        margin-top: $section-space-sp;
+  }
+}
+
+.btn_1 {
+  color: $color-white;
+  font-weight: $fw-bold;
+  background-color: $color-blue_2;
+  border-radius: 50px;
+  padding: 8px 45px;
+}
+
+.btn_2 {
+  color: $color-blue_2;
+  font-weight: $fw-bold;
+  background-color: $color-white;
+  border: 1px solid $color-blue_2;
+  border-radius: 50px;
+  padding: 8px 45px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

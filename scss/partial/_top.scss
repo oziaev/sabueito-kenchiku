@@ -1,0 +1,727 @@
+@use "_mixin" as m;
+@use "_common" as *;
+
+#top {
+  #fv {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/img/fv.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 100px;
+
+    @include m.tb {
+      padding-left: 16px;
+    }
+
+    .text-area {
+      margin-bottom: 24px;
+
+      &__title {
+        font-size: 4.8rem;
+        font-weight: $fw-bold;
+        margin-bottom: 24px;
+
+        @include m.tb {
+          font-size: 3.2rem;
+        }
+
+        @include m.sp {
+          font-size: 2.4rem;
+        }
+      }
+
+      &__text {
+        font-size: 2.4rem;
+
+        @include m.tb {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    .btn {
+      margin-bottom: 24px;
+
+      .btn_1 {
+        margin-right: 24px;
+
+        @include m.sp {
+          margin-right: 0;
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    .badge {
+      display: flex;
+
+      img {
+        width: 160px;
+
+        @include m.tb {
+          width: 120px;
+        }
+
+        @include m.sp {
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  #reason {
+    padding-inline: 8px;
+    padding-top: $section-space-pc;
+    margin-bottom: $section-space-pc;
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include m.tb {
+        flex-direction: column;
+      }
+
+      .left {
+        width: 40%;
+        margin-right: 46px;
+
+        @include m.tb {
+          width: 100%;
+          margin-right: 0;
+        }
+
+        .img_1 {
+          width: 90%;
+          margin-bottom: 24px;
+        }
+
+        .img_2 {
+          width: 70%;
+          margin-left: auto;
+          margin-bottom: 24px;
+        }
+      }
+
+      .reason-list {
+        width: 60%;
+
+        @include m.tb {
+          width: 100%;
+        }
+
+        .reason-item {
+          display: flex;
+          margin-bottom: 32px;
+
+          .num {
+            font-size: 64px;
+            font-family: $ff-num;
+            color: $color-blue_2;
+            margin-right: 24px;
+
+            @include m.tb {
+              font-size: $fs-xl;
+            }
+          }
+
+          .body {
+            margin-top: 37px;
+
+            @include m.tb {
+              margin-top: 15px;
+            }
+
+            .title {
+              font-size: 2.4rem;
+              font-family: $ff-mincho;
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #service {
+    background-color: $color-blue_3;
+    padding-block: $section-space-pc;
+    padding-inline: 8px;
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-bottom: $section-space-pc;
+
+      @include m.tb {
+        grid-template-columns: repeat(1,1fr);
+      }
+
+      .item {
+        background-color: $color-white;
+        border: 1px solid $color-border_gray;
+        border-radius: $border-radius;
+        padding: 8px;
+
+        .img {
+          margin-bottom: 16px;
+        }
+
+        .body {
+          padding: 8px;
+
+          .title {
+            font-size: $fs-lg;
+            border-bottom: 1px solid $color-border_gray;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+
+    .project {
+      &__title {
+        font-size: 3.2rem;
+        font-weight: $fw-bold;
+        font-family: $ff-mincho;
+        text-align: center;
+        margin-bottom: $section-space-sp;
+
+        @include m.tb {
+          font-size: 2.4rem;
+        }
+      }
+
+      &__list {
+        display: flex;
+        gap: 8px;
+
+        @include m.tb {
+          flex-direction: column;
+        }
+
+        .item {
+          border: 1px solid $color-border_gray;
+          border-radius: $border-radius;
+          background-color: $color-white;
+          padding: 16px;
+
+          .img {
+            width: 150px;
+            margin-inline: auto;
+            margin-bottom: 8px;
+          }
+
+          .title {
+            font-size: 2.4rem;
+            font-weight: $fw-bold;
+            color: $color-blue_1;
+            border-bottom: 1px solid $color-border_gray;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+
+            .big {
+              font-size: 4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #works {
+    padding-top: $section-space-pc;
+    margin-bottom: $section-space-pc;
+  }
+
+  #recruit {
+    position: relative;
+    background-attachment: fixed;
+    background-image: url(/img/recruit_background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-block: $section-space-pc;
+    padding-inline: 8px;
+
+    .job-list {
+      // 募集カード共通
+      .job-card {
+        border-radius: $border-radius;
+        border: 1px solid $color-border_gray;
+        background-color: $color-white;
+        padding: 16px;
+        margin-bottom: 24px;
+        
+        &__top {
+          margin-bottom: 16px;
+        }
+
+        &__tags {
+          font-size: $fs-sm;
+          display: flex;
+
+          .job-tag {
+            border-radius: 35px;
+            padding: 8px 16px;
+          }
+
+          .job-tag--type {
+            color: $color-blue_1;
+            background-color: $color-blue_4;
+          }
+        }
+
+        &__title {
+          font-size: 2.4rem;
+          font-family: $ff-mincho;
+          margin-bottom: 16px;
+        }
+      }
+
+      // 募集終了カード
+      .job-card--closed {
+        .job-card__tags {
+          opacity: 50%;
+
+          .job-tag--closed {
+            background-color: $color-border_gray;
+            margin-right: 16px;
+          }
+        }
+
+        .job-card__header {
+          opacity: 50%;
+          border-bottom: 1px solid $color-border_gray;
+          margin-bottom: 16px;
+        }
+
+        .job-card__notice {
+          opacity: 50%;
+          text-align: center;
+        }
+      }
+
+      // 募集中カード
+      .job-card,
+      .job-card--open {
+        .job-card__top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          @include m.sp {
+            flex-direction: column;
+            align-items: start;
+          }
+
+          .job-tag--open {
+            color: $color-green_1;
+            background-color: $color-green_2;
+            margin-right: 16px;
+          }
+        }
+
+        &__tags {
+          @include m.sp {
+            margin-bottom: 16px;
+          }
+        }
+
+        &__header {
+          margin-bottom: $section-space-sp;
+        }
+
+        &__section {
+          margin-bottom: $section-space-sp;
+        }
+
+        &__section-title {
+          font-size: $fs-sm;
+          color: $color-blue_1;
+          border-bottom: 1px solid $color-border_gray;
+          padding-bottom: 8px;
+          margin-bottom: 8px;
+        }
+
+        &__section-list {
+          list-style-type: disc;
+          list-style-position: inside;
+        }
+
+        &__footer {
+          border-top: 1px solid $color-border_gray;
+          display: flex;
+          justify-content: space-between;
+          padding-top: $section-space-sp;
+          margin-bottom: 24px;
+
+          @include m.sp {
+            flex-direction: column;
+          }
+        }
+
+        &__footer-item {
+          margin-right: 24px;
+
+          @include m.sp {
+            margin-right: 0;
+            border-bottom: 1px solid $color-border_gray;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+
+            &:last-child {
+              border-bottom: none;
+              padding-bottom: 0;
+              margin-bottom: 0;
+            }
+          }
+
+          dt,
+          dd:last-child {
+            font-size: $fs-sm;
+            color: $color-gray;
+          }
+        }
+      }
+
+      .job-benefits {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 16px;
+        margin-bottom: $section-space-pc;
+
+        @include m.sp {
+          grid-template-columns: repeat(1,1fr);
+        }
+        
+        &__box {
+          background-color: $color-white;
+          border: 1px solid $color-border_gray;
+          border-radius: $border-radius;
+          padding: 16px;
+        }
+  
+        &__title {
+          font-size: $fs-sm;
+          color: $color-blue_1;
+          border-bottom: 1px solid $color-border_gray;
+          padding-bottom: 8px;
+          margin-bottom: 8px;
+        }
+  
+        &__list {
+          list-style-type: disc;
+          list-style-position: inside;
+        }
+      }
+
+      &__entry {
+        text-align: center;
+      }
+    }
+  }
+
+  #message {
+    padding-top: $section-space-pc;
+    padding-inline: 16px;
+
+    .message-card {
+      border-radius: $border-radius;
+      border: 1px solid $color-blue_1;
+      padding: $section-space-sp 24px;
+
+      &__lead {
+        position: relative;
+        font-size: 3.2rem;
+        font-weight: $fw-bold;
+        color: $color-blue_1;
+        border-left: 3px solid $color-blue_2;
+        padding-left: 24px;
+        margin-bottom: 24px;
+
+        @include m.tb {
+          font-size: 2.4rem;
+        }
+
+        @include m.sp {
+          font-size: $fs-lg;
+        }
+      }
+
+      &__body {
+        border-bottom: 1px solid $color-blue_1;
+        margin-bottom: 24px;
+
+        p {
+          font-size: $fs-lg;
+          margin-bottom: 24px;
+
+          @include m.sp {
+            font-size: $fs-text;
+          }
+        }
+      }
+
+      &__signature {
+        text-align: right;
+      }
+
+      &__name {
+        font-size: 2.4rem;
+        font-weight: $fw-bold;
+
+        @include m.sp {
+          font-size: $fs-lg;
+        }
+      }
+
+      &__company {
+        font-size: $fs-lg;
+
+        @include m.sp {
+          font-size: $fs-text;
+        }
+      }
+    }
+  }
+
+  #company {
+    padding-top: $section-space-pc;
+    margin-bottom: $section-space-pc;
+
+    .section-header {
+      padding-inline: 16px;
+    }
+
+    .company-table {
+      margin-bottom: $section-space-pc;
+      
+      @include m.sp {
+        margin-bottom: $section-space-sp;
+      }
+
+      &__row {
+        font-size: $fs-lg;
+        text-align: left;
+        border-bottom: 1px solid $color-border_gray;
+        display: flex;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        
+        @include m.sp {
+          font-size: $fs-text;
+          flex-direction: column;
+          padding-bottom: 24px;
+          margin-bottom: 24px;
+        }
+
+        .head {
+          width: 30%;
+          font-weight: $fw-bold;
+          padding-inline: 16px;
+
+          @include m.sp {
+            width: 100%;
+            padding-inline: 8px;
+            margin-bottom: 8px;
+          }
+        }
+        
+        .date {
+          width: 70%;
+          padding-inline: 16px;
+
+          @include m.sp {
+            width: 100%;
+            padding-inline: 8px;
+          }
+        }
+      }
+    }
+    .nav {
+      width: 100%;
+      height: 500px;
+
+      @include m.sp {
+        height: 300px;
+      }
+    }
+  }
+
+  #contact {
+    background-color: $color-blue_3;
+    padding-block: $section-space-pc;
+    margin-bottom: $section-space-pc;
+
+    .contact-flow {
+      border-radius: $border-radius;
+      border: 1px solid $color-border_gray;
+      background-color: $color-white;
+      padding: $section-space-sp 32px;
+      margin-bottom: $section-space-sp;
+
+      &__title {
+        font-weight: $fw-bold;
+        color: $color-blue_2;
+        margin-bottom: 24px;
+      }
+
+      &__list {
+        display: flex;
+        justify-content: space-between;
+
+        @include m.tb {
+          flex-direction: column;
+        }
+      }
+
+      &__item {
+        position: relative;
+        flex: 1;
+        text-align: center;
+        border-radius: $border-radius;
+        border: 1px solid $color-border_gray;
+        background-color: $color-blue_3;
+        padding: 24px;
+        margin-right: 32px;
+
+        @include m.tb {
+          margin-right: 0;
+          margin-bottom: 32px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+
+          @include m.tb {
+            margin-bottom: 0;
+          }
+        }
+
+        &:not(:last-child)::after {
+          content: "→";
+          position: absolute;
+          top: 50%;
+          right: -34px;
+          transform: translateY(-50%);
+          font-size: 32px;
+          color: $color-blue_1;
+
+          @include m.tb {
+            top: auto;
+            right: auto;
+            left: 50%;
+            bottom: -44px;
+            transform: translateX(-50%) rotate(90deg);
+          }
+        }
+      }
+
+      &__step-current {
+        background-color: $color-blue_1;
+
+        .step,
+        .text {
+          color: $color-blue_5;
+        }
+
+        .heading {
+          color: $color-white;
+        }
+      }
+
+      &__step {
+        font-size: $fs-sm;
+        color: $color-blue_2;
+      }
+
+      &__heading {
+        font-size: $fs-lg;
+        font-weight: $fw-bold;
+        color: $color-blue_1;
+      }
+
+      &__text {
+        color: $color-gray;
+      }
+    }
+
+    .form {
+      text-align: center;
+      border-radius: $border-radius;
+      border: 1px solid $color-border_gray;
+      background-color: $color-white;
+      padding: $section-space-sp 32px;
+      margin-bottom: $section-space-sp;
+      
+      &__group {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+      }
+      
+      &__label {
+        margin-bottom: 16px;
+      }
+      
+      &__required {
+        font-size: $fs-sm;
+        color: #FF4B4B;
+        border-radius: 5px;
+        background-color: #FFE5E5;
+        padding: 2px 8px;
+        margin-left: 16px;
+      }
+      
+      &__any {
+        color: $color-gray;
+        background-color: $color-border_gray;
+      }
+      
+      &__input {
+        border-radius: $border-radius;
+        border: 1px solid $color-border_gray;
+        padding: 8px 16px;
+      }
+      
+      &__textarea {
+        height: 200px;
+      }
+      
+      &__btn {
+        margin-top: 32px;
+      }
+    }
+    
+    .contact-postal {
+      border-radius: $border-radius;
+      border: 1px solid $color-border_gray;
+      background-color: $color-white;
+      padding: $section-space-sp 32px;
+
+      &__title {
+        font-size: $fs-text;
+        color: $color-blue_2;
+        margin-bottom: 16px;
+      }
+
+      &__text {
+        margin-bottom: 32px;
+      }
+
+      &__label {
+        font-size: $fs-sm;
+        color: $color-gray;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
