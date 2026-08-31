@@ -11,6 +11,10 @@
     background-image: url(../img/fv.jpg);
     background-position: center;
     background-size: cover;
+    
+    @include m.sp {
+      justify-content: end;
+    }
 
     .inner {
       margin-left: $section-space-sp;
@@ -25,6 +29,7 @@
         border: 1px solid $color-white;
         padding: 16px;
         margin-inline: 16px;
+        margin-bottom: $section-space-sp;
       }
     }
 

@@ -604,6 +604,11 @@ span {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 430px) {
+  #top #fv {
+    justify-content: end;
+  }
+}
 #top #fv .inner {
   margin-left: 48px;
 }
@@ -619,6 +624,7 @@ span {
     border: 1px solid #fff;
     padding: 16px;
     margin-inline: 16px;
+    margin-bottom: 48px;
   }
 }
 #top #fv .text-area {
