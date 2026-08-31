@@ -11,10 +11,21 @@
     background-image: url(../img/fv.jpg);
     background-position: center;
     background-size: cover;
-    padding-left: 100px;
 
-    @include m.tb {
-      padding-left: 16px;
+    .inner {
+      margin-left: $section-space-sp;
+
+      @include m.tb {
+        margin-left: 24px;
+      }
+      
+      @include m.sp {
+        background-color: rgba($color: #fff, $alpha: .6);
+        border-radius: $border-radius;
+        border: 1px solid $color-white;
+        padding: 16px;
+        margin-inline: 16px;
+      }
     }
 
     .text-area {
@@ -30,7 +41,7 @@
         }
 
         @include m.sp {
-          font-size: 2.4rem;
+          font-size: 2.2rem;
         }
       }
 
@@ -39,6 +50,10 @@
 
         @include m.tb {
           font-size: 1.8rem;
+        }
+
+        @include m.sp {
+          font-size: $fs-text;
         }
       }
     }
