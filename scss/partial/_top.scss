@@ -9,11 +9,12 @@
     flex-direction: column;
     justify-content: center;
     background-image: url(../img/fv.jpg);
-    background-position: center;
+    background-position: 20% center;
     background-size: cover;
     
     @include m.sp {
       justify-content: end;
+      background-position: 30% center;
     }
 
     .inner {
@@ -24,10 +25,10 @@
       }
       
       @include m.sp {
-        background-color: rgba($color: #fff, $alpha: .6);
+        background-color: rgba($color: #fff, $alpha: .8);
         border-radius: $border-radius;
         border: 1px solid $color-white;
-        padding: 16px;
+        padding: 24px 16px;
         margin-inline: 16px;
         margin-bottom: $section-space-sp;
       }
@@ -36,9 +37,14 @@
     .text-area {
       margin-bottom: 24px;
 
+      @include m.sp {
+        text-align: center;
+      }
+      
       &__title {
         font-size: 4.8rem;
         font-weight: $fw-bold;
+        font-family: $ff-mincho;
         margin-bottom: 24px;
 
         @include m.tb {
@@ -46,7 +52,7 @@
         }
 
         @include m.sp {
-          font-size: 2.2rem;
+          font-size: 2.3rem;
         }
       }
 
@@ -66,18 +72,36 @@
     .btn {
       margin-bottom: 24px;
 
+      @include m.sp {
+        text-align: center;
+      }
+
       .btn_1 {
+        width: 210px;
         margin-right: 24px;
+
+        @include m.tb {
+          margin-bottom: 16px;
+
+        }
 
         @include m.sp {
           margin-right: 0;
-          margin-bottom: 16px;
         }
+      }
+
+      .btn_2 {
+        width: 210px;
+        text-align: center;
       }
     }
 
     .badge {
       display: flex;
+
+      @include m.sp {
+        justify-content: space-between;
+      }
 
       img {
         width: 160px;

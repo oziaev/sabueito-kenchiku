@@ -601,12 +601,13 @@ span {
   flex-direction: column;
   justify-content: center;
   background-image: url(../img/fv.jpg);
-  background-position: center;
+  background-position: 20% center;
   background-size: cover;
 }
 @media (max-width: 430px) {
   #top #fv {
     justify-content: end;
+    background-position: 30% center;
   }
 }
 #top #fv .inner {
@@ -619,10 +620,10 @@ span {
 }
 @media (max-width: 430px) {
   #top #fv .inner {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     border: 1px solid #fff;
-    padding: 16px;
+    padding: 24px 16px;
     margin-inline: 16px;
     margin-bottom: 48px;
   }
@@ -630,9 +631,15 @@ span {
 #top #fv .text-area {
   margin-bottom: 24px;
 }
+@media (max-width: 430px) {
+  #top #fv .text-area {
+    text-align: center;
+  }
+}
 #top #fv .text-area__title {
   font-size: 4.8rem;
   font-weight: 700;
+  font-family: "Zen Old Mincho", serif;
   margin-bottom: 24px;
 }
 @media (max-width: 768px) {
@@ -642,7 +649,7 @@ span {
 }
 @media (max-width: 430px) {
   #top #fv .text-area__title {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 }
 #top #fv .text-area__text {
@@ -661,17 +668,36 @@ span {
 #top #fv .btn {
   margin-bottom: 24px;
 }
+@media (max-width: 430px) {
+  #top #fv .btn {
+    text-align: center;
+  }
+}
 #top #fv .btn .btn_1 {
+  width: 210px;
   margin-right: 24px;
+}
+@media (max-width: 768px) {
+  #top #fv .btn .btn_1 {
+    margin-bottom: 16px;
+  }
 }
 @media (max-width: 430px) {
   #top #fv .btn .btn_1 {
     margin-right: 0;
-    margin-bottom: 16px;
   }
+}
+#top #fv .btn .btn_2 {
+  width: 210px;
+  text-align: center;
 }
 #top #fv .badge {
   display: flex;
+}
+@media (max-width: 430px) {
+  #top #fv .badge {
+    justify-content: space-between;
+  }
 }
 #top #fv .badge img {
   width: 160px;
