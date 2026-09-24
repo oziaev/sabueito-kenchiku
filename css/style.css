@@ -347,22 +347,12 @@ span {
     transition: ease 0s;
   }
 }
-@media (max-width: 430px) {
-  #header .header-inner {
-    justify-content: end;
-  }
-}
 #header .header-inner .logo {
   width: 200px;
 }
 @media (max-width: 768px) {
   #header .header-inner .logo {
     width: 150px;
-  }
-}
-@media (max-width: 430px) {
-  #header .header-inner .logo {
-    display: none;
   }
 }
 #header .header-inner nav {
@@ -383,7 +373,7 @@ span {
 }
 @media (max-width: 768px) {
   #header .header-inner nav .btn_1 {
-    margin-right: 50px;
+    display: none;
   }
 }
 #header .toggle {
@@ -455,7 +445,7 @@ span {
   margin-bottom: 16px;
 }
 #header.active .header-inner nav .btn_1 {
-  margin-right: 0;
+  display: block;
 }
 #header.active .toggle {
   top: 32px;
