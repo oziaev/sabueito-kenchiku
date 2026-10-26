@@ -731,6 +731,7 @@
       }
       
       &__input {
+        width: 100%;
         border-radius: $border-radius;
         border: 1px solid $color-border_gray;
         padding: 8px 16px;
@@ -768,4 +769,12 @@
       }
     }
   }
+}
+#top #contact .wpcf7-form-control-wrap {
+  display: block;
+  width: 100%;
+}
+
+#top #contact .form__input {
+  width: 100%;
 }
