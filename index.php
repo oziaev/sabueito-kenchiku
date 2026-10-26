@@ -1,0 +1,460 @@
+<?php get_header(); ?>
+
+    <main id="top">
+      <div id="fv">
+        <div class="inner">
+          <div class="text-area">
+            <p class="text-area__title">未経験から、誇れる仕事へ。</p>
+            <p class="text-area__text">
+              年間100件以上の現場で、<br />最短で成長できる環境。<br />「地図に残る仕事」で、未来をつくる。
+            </p>
+          </div>
+
+          <div class="btn">
+            <a href="#recruit" class="btn_1">募集情報を見る</a>
+            <a href="#contact" class="btn_2">応募する</a>
+          </div>
+
+          <div class="badge">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/fv_badge_1-2.png" alt="バッジ" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/fv_badge_2-2.png" alt="バッジ" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/fv_badge_3-2.png" alt="バッジ" />
+          </div>
+        </div>
+      </div>
+
+      <section id="reason">
+        <div class="section-header">
+          <p class="section-header__title__en">REASON</p>
+          <h2 class="section-header__title__ja">
+            選ばれる理由、働き続けられる理由
+          </h2>
+        </div>
+        <div class="wrapper flex">
+          <div class="left">
+            <img class="img_1" src="<?php echo get_template_directory_uri(); ?>/img/reason_1.jpg" alt="画像" />
+            <img class="img_2" src="<?php echo get_template_directory_uri(); ?>/img/reason_2.jpg" alt="画像" />
+          </div>
+
+          <ul class="right reason-list">
+            <li class="reason-item">
+              <span class="num">01</span>
+              <div class="body">
+                <h3 class="title">働きやすい理由</h3>
+                <p class="text">
+                  残業月平均15時間以下。家族との時間も大切にできる働き方を実現しています。
+                </p>
+              </div>
+            </li>
+            <li class="reason-item">
+              <span class="num">02</span>
+              <div class="body">
+                <h3 class="title">教育体制</h3>
+                <p class="text">
+                  「未経験から、一生モノのプロへ。伴走型教育システム。」<br />資格取得支援制度（費用全額負担など）、メンター制度、社内研修の様子。具体的なキャリアステップの図解。
+                </p>
+              </div>
+            </li>
+            <li class="reason-item">
+              <span class="num">03</span>
+              <div class="body">
+                <h3 class="title">チームワーク重視</h3>
+                <p class="text">
+                  「背中を見て学べ、ではなく、隣で支え合うチーム。」<br />若手とベテランの交流、社内イベント、風通しの良さ。社長の想いや社員インタビュー動画へのリンク。
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="service">
+        <div class="section-header">
+          <p class="section-header__title__en">SERVICE</p>
+          <h2 class="section-header__title__ja">幅広い住宅サービス</h2>
+          <p class="section-header__text">
+            注文住宅から分譲、リフォームまで、多様な住まいづくりに携わることができます。
+          </p>
+        </div>
+
+        <div class="wrapper">
+          <ul class="service-list">
+            <li class="item">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/service_1.jpg" alt="画像" class="img" />
+              <div class="body">
+                <h3 class="title">注文住宅・建て売り</h3>
+                <p class="text">
+                  お客様の夢を形にするオーダーメイドの住まい。設計から施工まで一貫してサポートし、理想のライフスタイルに合わせた唯一無二の空間を実現します。
+                </p>
+              </div>
+            </li>
+
+            <li class="item">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/service_2.jpg" alt="画像" class="img" />
+              <div class="body">
+                <h3 class="title">造成・分譲</h3>
+                <p class="text">
+                  土地の価値を最大限に引き出す造成のエキスパート。高品質な素材と確かな技術で、快適で安心な暮らしをすぐに始められるお手伝いをさせて頂きます。
+                </p>
+              </div>
+            </li>
+
+            <li class="item">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/service_3.jpg" alt="画像" class="img" />
+              <div class="body">
+                <h3 class="title">リフォーム・リノベーション</h3>
+                <p class="text">
+                  住まいをもっと快適に、もっと自分らしく。機能性向上とデザイン刷新を両立し、お客様の想いを丁寧にヒアリングして新たな空間へと生まれ変わらせます。
+                </p>
+              </div>
+            </li>
+
+            <li class="item">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/service_4.jpg" alt="画像" class="img" />
+              <div class="body">
+                <h3 class="title">店舗改装・看板 / ロゴデザイン・HP制作</h3>
+                <p class="text">
+                  集客力向上とブランドイメージ確立を支援。お客様のビジネスコンセプトを深く理解し、機能性とデザイン性を兼ね備えた総合的な店舗づくりをお手伝いします。
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="project">
+            <p class="project__title">多彩なプロジェクトで成長できる環境</p>
+            <ul class="project__list">
+              <li class="item">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/service_icon_1.jpg" alt="アイコン" class="img" />
+                <p class="title"><span class="big">100+ </span>現場/年</p>
+                <p class="text">
+                  住宅から商業施設まで、年間100件超の多様なプロジェクトで実践的な知識を習得。着実にキャリアアップできる環境です。
+                </p>
+              </li>
+              <li class="item">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/service_icon_2.jpg" alt="アイコン" class="img" />
+                <p class="title"><span class="big">最新</span>技術</p>
+                <p class="text">
+                  BIM/CIM・AI設計支援・省エネ技術など、建築業界の最前線の技術を積極的に導入。充実の研修制度で常に学べます。
+                </p>
+              </li>
+              <li class="item">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/service_icon_3.jpg" alt="アイコン" class="img" />
+                <p class="title"><span class="big">地域</span>密着</p>
+                <p class="text">
+                  地域特有の気候や文化に配慮した建築を通じて、地域住民の豊かな暮らしを支え、地域経済の発展に貢献するやりがいを感じられます。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="works">
+        <div class="section-header">
+          <p class="section-header__title__en">WORKS</p>
+          <h2 class="section-header__title__ja">確かな実績と信頼</h2>
+          <p class="section-header__text">
+            株式会社サブエイト建築では、600件を超える現場実績を提供してきました。
+          </p>
+        </div>
+        <div class="wrapper">
+          <?php echo do_shortcode('[instagram-feed feed=2]'); ?>
+        </div>
+      </section>
+
+      <section id="recruit">
+        <div class="section-header">
+          <p class="section-header__title__en">RECRUIT</p>
+          <h2 class="section-header__title__ja">募集中の職種</h2>
+          <p class="section-header__text">
+            現在募集中の職種は下記の通りです。まずは詳細をご確認ください。
+          </p>
+        </div>
+        <div class="job-list wrapper">
+          <!-- ===== 募集終了カード ===== -->
+          <article class="job-card job-card--closed">
+            <div class="job-card__top">
+              <div class="job-card__tags">
+                <span class="job-tag job-tag--closed">募集終了</span>
+                <span class="job-tag job-tag--type">正社員</span>
+              </div>
+            </div>
+
+            <div class="job-card__header">
+              <h3 class="job-card__title">建築作業員(未経験歓迎)</h3>
+            </div>
+
+            <p class="job-card__notice">
+              現在この職種の募集は終了しております。次回の募集をお待ちください。
+            </p>
+          </article>
+
+          <!-- ===== 募集中カード ===== -->
+          <article class="job-card job-card--open">
+            <div class="job-card__top">
+              <div class="job-card__tags">
+                <span class="job-tag job-tag--open">募集中</span>
+                <span class="job-tag job-tag--type">正社員</span>
+              </div>
+              <a href="#form" class="job-card__apply-btn btn_1">応募する</a>
+            </div>
+
+            <div class="job-card__header">
+              <h3 class="job-card__title">現場監督(経験者・未経験者歓迎)</h3>
+              <p class="job-card__lead">
+                建築現場における施工管理業務全般をお任せします。具体的には以下の業務を担当していただきます。
+              </p>
+            </div>
+
+            <div class="job-card__section">
+              <h4 class="job-card__section-title">業務内容</h4>
+              <ul class="job-card__section-list">
+                <li>工程管理：工事全体のスケジュール作成、進捗管理、調整</li>
+                <li>
+                  品質管理：施工品質のチェック、是正指示、品質向上への取り組み
+                </li>
+                <li>
+                  安全管理：現場の安全パトロール、危険予知活動、安全衛生教育
+                </li>
+                <li>原価管理：予算管理、資材発注、コスト削減の推進</li>
+                <li>
+                  協力会社との連携：職人や協力会社との打ち合わせ、指示、調整
+                </li>
+                <li>書類作成：施工計画書、報告書、図面作成など</li>
+              </ul>
+            </div>
+
+            <div class="job-card__section">
+              <h4 class="job-card__section-title">応募資格</h4>
+              <ul class="job-card__section-list">
+                <li>普通自動車運転免許(AT限定可)</li>
+                <li>基本的なPCスキル(Word、Excel)</li>
+                <li>
+                  【歓迎】建築施工管理技士(1級・2級)、現場監督の実務経験、建築系学科、CADソフト使用経験
+                </li>
+              </ul>
+            </div>
+
+            <div class="job-card__section">
+              <h4 class="job-card__section-title">求める人物像</h4>
+              <ul class="job-card__section-list">
+                <li>
+                  コミュニケーション能力が高く、チームで働くことが好きな方
+                </li>
+                <li>責任感が強く、最後までやり遂げる意欲のある方</li>
+                <li>新しい知識や技術の習得に意欲的な方</li>
+                <li>地域に貢献したいという熱意をお持ちの方</li>
+              </ul>
+            </div>
+
+            <dl class="job-card__footer">
+              <div class="job-card__footer-item">
+                <dt>給与</dt>
+                <dd>月給：25万円～50万円</dd>
+                <dd>経験・能力を考慮し決定</dd>
+              </div>
+              <div class="job-card__footer-item">
+                <dt>勤務時間</dt>
+                <dd>8:00〜17:00(休憩60分)</dd>
+                <dd>残業：月平均20時間程度</dd>
+              </div>
+              <div class="job-card__footer-item">
+                <dt>勤務地</dt>
+                <dd>本社および各建築現場</dd>
+                <dd>主に滋賀県内</dd>
+              </div>
+            </dl>
+          </article>
+
+          <div id="benefits" class="job-benefits">
+            <div class="job-benefits__box">
+              <h4 class="job-benefits__title">給与・手当</h4>
+              <ul class="job-benefits__list">
+                <li>昇給：年1回（4月）</li>
+                <li>賞与：年2回（7月・12月）※業績による</li>
+                <li>各種手当：（資格・役職・残業・通勤全額支給）</li>
+              </ul>
+            </div>
+            <div class="job-benefits__box">
+              <h4 class="job-benefits__title">休日・休暇</h4>
+              <ul class="job-benefits__list">
+                <li>週休2日制（土・日）</li>
+                <li>年間休日115日</li>
+                <li>夏季・年末年始・有給・慶弔休暇</li>
+              </ul>
+            </div>
+            <div class="job-benefits__box">
+              <h4 class="job-benefits__title">福利厚生</h4>
+              <ul class="job-benefits__list">
+                <li>社会保険完備</li>
+                <li>退職金制度</li>
+                <li>社員旅行・懇親会費用補助</li>
+                <li>妻の誕生日休暇制度・費用補助</li>
+              </ul>
+            </div>
+            <div class="job-benefits__box">
+              <h4 class="job-benefits__title">教育・サポート</h4>
+              <ul class="job-benefits__list">
+                <li>資格取得支援制度（受験費用、研修費用を会社が負担）</li>
+                <li>社内研修制度（OJT、外部講習会参加支援）</li>
+                <li>健康診断</li>
+              </ul>
+            </div>
+          </div>
+          <div class="job-list__entry">
+            <a href="#form" class="entry-btn btn_1">エントリーフォームへ進む</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="message">
+        <div class="section-header">
+          <p class="section-header__title__en">MESSAGE</p>
+          <h2 class="section-header__title__ja">代表挨拶</h2>
+        </div>
+        <div class="container message-card">
+          <p class="message-card__lead">
+            「人」こそが最大の財産。<br />共に未来を築いていきませんか。
+          </p>
+          <div class="message-card__body">
+            <p>
+              この度は、弊社のホームページをご覧いただき、誠にありがとうございます。私たちは、地域社会に根ざし、お客様の夢を形にする建築会社として、長年にわたり信頼と実績を積み重ねてまいりました。
+            </p>
+            <p>
+              私たちが手掛けるのは、単なる建物の建設ではありません。人々の暮らしを豊かにし、街の未来を創造する「地図に残る仕事」です。弊社では、年間100件を超える多様なプロジェクトを通じて、社員一人ひとりが成長できる環境を提供しています。
+            </p>
+            <p>
+              最新技術の導入にも積極的で、常に新しい知識とスキルを習得できる機会が豊富にあります。経験者はもちろん、未経験の方でも、情熱と意欲があれば、私たちは全力でサポートし、プロフェッショナルへと導きます。
+            </p>
+            <p>皆様からのご応募を心よりお待ちしております。</p>
+          </div>
+          <div class="message-card__signature">
+            <p class="message-card__name">代表取締役 安田 聖</p>
+            <p class="message-card__company">株式会社 サブエイト建築</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="company">
+        <div class="section-header">
+          <p class="section-header__title__en">COMPANY</p>
+          <h2 class="section-header__title__ja">会社概要</h2>
+          <p class="section-header__text">
+            地域に根ざし、お客様と社員を大切にする住宅会社として成長を続けています。
+          </p>
+        </div>
+        <table class="company-table wrapper">
+          <tbody>
+            <tr class="company-table__row">
+              <th class="head">会社名</th>
+              <td class="date">株式会社 サブエイト建築</td>
+            </tr>
+
+            <tr class="company-table__row">
+              <th class="head">代表取締役</th>
+              <td class="date">安田 聖</td>
+            </tr>
+
+            <tr class="company-table__row">
+              <th class="head">住所</th>
+              <td class="date">
+                〒524-0021<br />滋賀県守山市吉身2丁目9番27-204号
+              </td>
+            </tr>
+
+            <tr class="company-table__row">
+              <th class="head">設立</th>
+              <td class="date">令和6年10月1日</td>
+            </tr>
+
+            <tr class="company-table__row">
+              <th class="head">資本金</th>
+              <td class="date">500万</td>
+            </tr>
+
+            <tr class="company-table__row">
+              <th class="head">従業員数</th>
+              <td class="date">47名(外注含む)</td>
+            </tr>
+
+            <tr class="company-table__row">
+              <th class="head">事業内容</th>
+              <td class="date">
+                注文住宅の設計・施工/分譲住宅の開発/住宅リフォ
+                ム・リノベーション工事/店舗改装/看板デザイン/ロゴデザイン/店舗ホームページ制作
+              </td>
+            </tr>
+
+            <tr class="company-table__row">
+              <th class="head">許可・登録</th>
+              <td class="date">建設業許可 ○○県知事許可（特 1）第12345号</td>
+            </tr>
+          </tbody>
+        </table>
+        <iframe
+          class="nav"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1632.9816668290696!2d135.9940616!3d35.0576558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001717481801bc5%3A0x5538e816da7fa7cd!2z44CSNTI0LTAwMjEg5ruL6LOA55yM5a6I5bGx5biC5ZCJ6Lqr77yS5LiB55uu77yZ4oiS77yS77yX!5e0!3m2!1sja!2sjp!4v1787297631407!5m2!1sja!2sjp"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </section>
+
+      <section id="contact">
+        <div class="section-header">
+          <p class="section-header__title__en">CONTACT / ENTRY</p>
+          <h2 class="section-header__title__ja">お問い合わせ・ご応募</h2>
+          <p class="section-header__text">
+            以下のフォームに必要事項をご記入の上、送信してください。<br />「話だけ聞きたい」「未経験だけど興味がある」という方もお気軽にどうぞ。
+          </p>
+        </div>
+        <div class="wrapper">
+          <div class="contact-flow">
+            <h3 class="contact-flow__title">応募の流れ</h3>
+            <ul class="contact-flow__list">
+              <li class="contact-flow__item contact-flow__step-current">
+                <p class="contact-flow__step step">STEP 01</p>
+                <h4 class="contact-flow__heading heading">フォームで応募</h4>
+                <p class="contact-flow__text text">お名前・連絡先のみでOK</p>
+              </li>
+              <li class="contact-flow__item">
+                <p class="contact-flow__step">STEP 02</p>
+                <h4 class="contact-flow__heading">担当よりご連絡</h4>
+                <p class="contact-flow__text">2〜3営業日以内に折返し</p>
+              </li>
+              <li class="contact-flow__item">
+                <p class="contact-flow__step">STEP 03</p>
+                <h4 class="contact-flow__heading">面接（書類持参）</h4>
+                <p class="contact-flow__text">履歴書は当日でOK</p>
+              </li>
+            </ul>
+          </div>
+
+          <div id="form" class="form">
+            <?php echo do_shortcode('[contact-form-7 id="62b7281" title="コンタクトフォーム"]'); ?>
+          </div>
+
+          <div class="contact-postal">
+            <h3 class="contact-postal__title">
+              郵送でのご応募も受け付けております
+            </h3>
+            <p class="contact-postal__text">
+              履歴書（写真貼付）および職務経歴書をご郵送ください。書類選考の上、追って面接日をご連絡いたします。
+            </p>
+            <div class="contact-postal__address">
+              <p class="contact-postal__label">送付先</p>
+              <address class="contact-postal__info">
+                〒524-0021<br />
+                滋賀県守山市吉身2丁目9番27-204号株式会社サブエイト建築<br />
+                採用担当：安田<br />
+                TEL：080-1402-8510
+              </address>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<?php get_footer(); ?>
